@@ -9,7 +9,7 @@ resource "aws_lambda_function" "hello_world_function" {
 
   environment {
     variables = {
-      currentLocation = "London"
+      currentLocation = "Salt Lake City"
     }
   }
   tags = {
