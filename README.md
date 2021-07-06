@@ -27,6 +27,14 @@ account_id = "<<your AWS account id>>"
 
 ```
 
+Or instead of the above, you can apply the account key and secret to your terminal session like so:
+
+```
+export AWS_ACCESS_KEY_ID="<< your IAM user AWS access key >>"
+export AWS_SECRET_ACCESS_KEY="<< your IAM user AWS secret key >>"
+export AWS_SESSION_TOKEN="<< your session token when needed >>"
+```
+
 From the root of the project run the `build_and_deploy.sh` script.
 This compiles the Java application into the `helloworld/target` directory
 and runs Terraform to upload and configure the Lambda function and API Gateway.
