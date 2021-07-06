@@ -3,14 +3,15 @@ terraform.tfvars
 *.tfstate*
 *.out
 .gradle
-app
 
 *.iml
 .idea
 **/target
 
 # Ignore Gradle project-specific cache directory
-.gradle
+.gradle/
+gradle/
+app/
 
 # Ignore Gradle build output directory
 build
