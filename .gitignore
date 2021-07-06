@@ -2,6 +2,8 @@ terraform.tfvars
 **/.terraform
 *.tfstate*
 *.out
+.gradle
+app
 
 *.iml
 .idea
