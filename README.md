@@ -27,7 +27,7 @@ account_id = "<<your AWS account id>>"
 
 ```
 
-Or instead of the above, you can apply the account key and secret to your terminal session like so:
+Or instead of the above, you can apply the account key and secret to your terminal session. See .`/terraform/main.tf` for more details:
 
 ```
 export AWS_ACCESS_KEY_ID="<< your IAM user AWS access key >>"
