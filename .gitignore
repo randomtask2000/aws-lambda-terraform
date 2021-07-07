@@ -12,6 +12,7 @@ terraform.tfvars
 .gradle/
 gradle/
 app/
+gradle/wrapper
 
 # Ignore Gradle build output directory
 build
