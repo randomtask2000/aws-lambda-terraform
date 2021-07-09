@@ -7,19 +7,19 @@ variable "region" {}
 variable "account_id" {}
 
 variable "lambda_payload_filename" {
-  default = "../helloworlddotnet/target/helloworldjava-0.1.0-SNAPSHOT.jar"
+  default = "../helloworlddotnet/src/HelloWorld/bin/helloworlddotnet-0.1.0-SNAPSHOT.zip"
 }
 
 variable "lambda_function_handler" {
-  default = "com.emilionicoli.exp.helloworld.HelloLambdaHandler"
+  default = "HelloWorld::HelloWorld.Function"
 }
 
 variable "lambda_runtime" {
-  default = "java8"
+  default = "netcoreapp3.1"
 }
 
 variable "api_path" {
-  default = "helloworld"
+  default = "HelloWorld"
 }
 
 variable "hello_world_http_method" {
