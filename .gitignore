@@ -3,6 +3,7 @@ terraform.tfvars
 *.tfstate*
 *.out
 .gradle
+**/.classpath/
 
 *.iml
 .idea
