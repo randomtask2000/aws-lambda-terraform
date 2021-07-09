@@ -7,9 +7,9 @@ using Xunit;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.TestUtilities;
 
-using HelloService;
+using HelloWorld;
 
-namespace HelloService.Tests
+namespace HelloWorld.Tests
 {
     public class FunctionTest
     {
