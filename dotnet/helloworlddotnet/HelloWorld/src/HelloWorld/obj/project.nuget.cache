@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+bxLBj9aHpBmYw0YjY8mLkMcai5BmG6g5yGgKyp+qSgjO7Bn2hV+zcUO6XEwTR6UYxn03PlUUcFcs4WMzrtZGA==",
+  "success": true,
+  "projectFilePath": "/Users/enicoli/my/java/aws-lambda-terraform/dotnet/helloworlddotnet/HelloWorld/src/HelloWorld/HelloWorld.csproj",
+  "expectedPackageFiles": [
+    "/Users/enicoli/.nuget/packages/amazon.lambda.core/1.2.0/amazon.lambda.core.1.2.0.nupkg.sha512",
+    "/Users/enicoli/.nuget/packages/amazon.lambda.serialization.systemtextjson/2.1.0/amazon.lambda.serialization.systemtextjson.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -12,6 +12,11 @@ namespace HelloWorld
 {
     public class Function
     {
+        private HelloService helloService;
+        public Function()
+        {
+            helloService = HelloService();
+        }
         
         /// <summary>
         /// A simple function that takes a string and does a ToUpper
@@ -21,7 +26,7 @@ namespace HelloWorld
         /// <returns></returns>
         public string FunctionHandler(string input, ILambdaContext context)
         {
-            return input?.ToUpper();
+            return helloService.GenerateHello("Emilio", "Salt Lake City");
         }
     }
 }
