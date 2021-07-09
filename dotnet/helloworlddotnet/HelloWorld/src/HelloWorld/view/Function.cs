@@ -12,10 +12,10 @@ namespace HelloWorld
 {
     public class Function
     {
-        private HelloService helloService;
+        private IHelloService helloService;
         public Function()
         {
-            helloService = HelloService();
+            helloService = new HelloService();
         }
         
         /// <summary>
@@ -26,7 +26,7 @@ namespace HelloWorld
         /// <returns></returns>
         public string FunctionHandler(string input, ILambdaContext context)
         {
-            return helloService.GenerateHello("Emilio", "Salt Lake City");
+            return helloService.GenerateHello(input, "Salt Lake City");
         }
     }
 }

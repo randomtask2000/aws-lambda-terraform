@@ -7,7 +7,7 @@ variable "region" {}
 variable "account_id" {}
 
 variable "lambda_payload_filename" {
-  default = "../helloworldjava/target/helloworldjava-0.1.0-SNAPSHOT.jar"
+  default = "../helloworlddotnet/target/helloworldjava-0.1.0-SNAPSHOT.jar"
 }
 
 variable "lambda_function_handler" {
