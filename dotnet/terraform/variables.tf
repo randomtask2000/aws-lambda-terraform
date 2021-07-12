@@ -7,15 +7,15 @@ variable "region" {}
 variable "account_id" {}
 
 variable "lambda_payload_filename" {
-  default = "../helloworlddotnet/src/HelloWorld/bin/helloworlddotnet-0.1.0-SNAPSHOT.zip"
+  default = "../helloworlddotnet/src/HelloWorld/bin/helloworlddotnet-0.1.5-SNAPSHOT.zip"
 }
 
 variable "lambda_function_handler" {
-  default = "HelloWorld::HelloWorld.Function"
+  default = "HelloWorld::HelloWorld.Function::FunctionHandler"
 }
 
 variable "lambda_runtime" {
-  default = "netcoreapp3.1"
+  default = "dotnetcore3.1"
 }
 
 variable "api_path" {
