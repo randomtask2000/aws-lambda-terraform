@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 using Amazon.Lambda.Core;
@@ -24,9 +25,23 @@ namespace HelloWorld
         /// <param name="input"></param>
         /// <param name="context"></param>
         /// <returns></returns>
-        public string FunctionHandler(string input, ILambdaContext context)
+        public string FunctionHandler(object input, ILambdaContext context)
         {
-            return helloService.GenerateHello(input, "Salt Lake City");
+            var json = (System.Text.Json.JsonElement)input;
+            var name = GetPropertyValue(json, "name");
+            return helloService.GenerateHello(name, "Salt Lake City");
+        }
+
+        private string GetPropertyValue(JsonElement eventDetails, string propertyName)
+        {
+            string propertyValue = string.Empty;
+            JsonElement jsonElement;
+            if (eventDetails.TryGetProperty(propertyName, out jsonElement))
+            {
+                propertyValue = jsonElement.GetString();
+            }
+            return propertyValue;
         }
     }
+
 }

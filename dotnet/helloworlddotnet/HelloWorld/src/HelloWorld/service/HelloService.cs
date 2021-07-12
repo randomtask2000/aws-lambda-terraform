@@ -16,6 +16,7 @@ namespace HelloWorld
         public string GenerateHello(string name, string currentLocation)
         {
             return string.Format("Hello {0} from {1}", name, currentLocation);
+            //return "{\"msg\":\"Hello Emilio\"}";
         }
     }
 }
