@@ -29,7 +29,9 @@ namespace HelloWorld
         {
             var json = (System.Text.Json.JsonElement)input;
             var name = GetPropertyValue(json, "name");
-            return helloService.GenerateHello(name, "Salt Lake City");
+            var str = helloService.GenerateHello(name, "Salt Lake City");
+            
+            return Newtonsoft.Json.JsonConvert.SerializeObject(str);
         }
 
         private string GetPropertyValue(JsonElement eventDetails, string propertyName)

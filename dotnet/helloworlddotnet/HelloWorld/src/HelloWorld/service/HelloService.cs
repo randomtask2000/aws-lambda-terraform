@@ -2,7 +2,7 @@ namespace HelloWorld
 {
     public interface IHelloService
     {
-        string GenerateHello(string name, string currentLocation);
+        Response GenerateHello(string name, string currentLocation);
     }
 
     public class HelloService : IHelloService
@@ -13,10 +13,23 @@ namespace HelloWorld
         /// <param name="name"></param>
         /// <param name="currentLocation"></param>
         /// <returns>Returns a string</returns>
-        public string GenerateHello(string name, string currentLocation)
+        public Response GenerateHello(string name, string currentLocation)
         {
-            return string.Format("Hello {0} from {1}", name, currentLocation);
-            //return "{\"msg\":\"Hello Emilio\"}";
+            //string name = request.getName();
+            //string currentLocation = System.getenv("currentLocation");
+
+            return new Response(string.Format("Hello {0} from {1}", name, currentLocation));
+        }
+    }
+
+    public class Response {
+        public string output;
+        public Response(string output) {
+            this.output = output;
+        }
+
+        public string getOutput() {
+            return output;
         }
     }
 }
