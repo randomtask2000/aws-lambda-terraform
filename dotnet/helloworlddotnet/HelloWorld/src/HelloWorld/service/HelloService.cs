@@ -23,7 +23,7 @@ namespace HelloWorld
     }
 
     public class Response {
-        public string output;
+        public string output { get; set; }
         public Response(string output) {
             this.output = output;
         }
