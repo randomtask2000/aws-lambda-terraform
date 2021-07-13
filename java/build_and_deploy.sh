@@ -9,6 +9,7 @@ if [ $? -ne 0 ]; then
   exit -1
 fi
 
+# put the gradle jar into the maven target file
 mkdir -p target
 cp build/libs/helloworldjava-0.1.0-SNAPSHOT.jar target/helloworldjava-0.1.0-SNAPSHOT.jar
 
