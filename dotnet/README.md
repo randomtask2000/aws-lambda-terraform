@@ -1,10 +1,10 @@
-# aws-lambda-terraform-java
+# aws-lambda-terraform-dotnet
 
-I cloned this repo from [danielbryantuk](https://github.com/danielbryantuk/aws-lambda-terraform-java-play) who created a super nice starter app showing how you can use `terraform` to create a simple lambda fronted by API Gateway. Thank you Daniel!.
+I cloned this repo from [danielbryantuk](https://github.com/danielbryantuk/aws-lambda-terraform-java-play) who created a super nice starter app showing how you can use `terraform` to create a simple lambda fronted by API Gateway. Thank you Daniel!
 
 This repo is a little more up to date from the original and hopefully will contain a few more code examples.
 
-This is a _very_ simple demonstration of the code required to deploy a Java
+This is a _very_ simple demonstration of the code required to deploy a Dotnet
 [AWS Lambda Function](https://aws.amazon.com/lambda/) and expose the function
 with [AWS API Gateway](https://aws.amazon.com/api-gateway/). The infrastructure
 configuration and deployment is executed using [HashiCorp's Terraform](https://www.terraform.io/) programmable infrastructure tool.
@@ -63,7 +63,7 @@ curl -H 'Content-Type: application/json' -X POST -d '{"name": "Emilio"}' https:/
 
 ## Rinse and repeat
 
-You can make changes to the Java application and run the `build_and_deploy.sh`
+You can make changes to the Dotnet application and run the `build_and_deploy.sh`
 script repeatedly to update the Lambda Function deployed into AWS.
 
 ## Tidy up when finished!
