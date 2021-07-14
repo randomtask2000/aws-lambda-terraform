@@ -11,7 +11,7 @@ fi
 
 # put the gradle jar into the maven target file
 mkdir -p target
-cp build/libs/helloworldjava-0.1.0-SNAPSHOT.jar target/helloworldjava-0.1.0-SNAPSHOT.jar
+cp build/libs/helloworldjava-*.jar target/helloworldjava-*.jar
 
 cd ..
 printf '\n\nStarting the Terraforming!\n\n'
