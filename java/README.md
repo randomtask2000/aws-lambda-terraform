@@ -1,15 +1,14 @@
-# aws-lambda-terraform-java
+# aws-lambda-terraform
 
-I cloned this repo from [danielbryantuk](https://github.com/danielbryantuk/aws-lambda-terraform-java-play) who created a super nice starter app showing how you can use `terraform` to create a simple lambda fronted by API Gateway. Thank you Daniel!.
+This repo demonstrates how to create Lambda's in both Java and Dotnet with the help of Terraform. 
 
-This repo is a little more up to date from the original and hopefully will contain a few more code examples.
+I cloned this repo from [danielbryantuk](https://github.com/danielbryantuk/aws-lambda-terraform-java-play) who created a super nice starter app (in Java) showing how you can use `terraform` to create a simple lambda fronted by API Gateway. Thank you Daniel!
 
-This is a _very_ simple demonstration of the code required to deploy a Java
-[AWS Lambda Function](https://aws.amazon.com/lambda/) and expose the function
-with [AWS API Gateway](https://aws.amazon.com/api-gateway/). The infrastructure
-configuration and deployment is executed using [HashiCorp's Terraform](https://www.terraform.io/) programmable infrastructure tool.
+This repo is a little more up to date from the original and has the added Dotnet version that follows the same design pattern. So, for those that want to go to Java or Dotnet, this repo should compare the two environments nicely.  
 
 ## Get started
+
+Go to one of the directories `dotnet` or `java` and do the following:
 
 To get started simply create a `terraform.tfvars` file in `terraform`
 directory with your AWS account/IAM User details. Your IAM User must have
