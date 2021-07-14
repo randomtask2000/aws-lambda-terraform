@@ -6,10 +6,6 @@ variable "region" {}
 
 variable "account_id" {}
 
-variable "lambda_payload_filename" {
-  default = "../helloworlddotnet/src/HelloWorld/bin/helloworlddotnet-0.1.5-SNAPSHOT.zip"
-}
-
 variable "lambda_function_handler" {
   default = "HelloWorld::HelloWorld.HelloLambdaHandler::HandleRequest"
 }
