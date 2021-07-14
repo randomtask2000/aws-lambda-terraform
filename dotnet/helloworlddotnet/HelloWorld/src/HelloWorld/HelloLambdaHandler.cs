@@ -11,12 +11,12 @@ using Amazon.Lambda.Core;
 
 namespace HelloWorld
 {
-    public class Function
+    public class HelloLambdaHandler
     {
         private IHelloService helloService;
-        public Function()
+        public HelloLambdaHandler()
         {
-            helloService = new HelloService();
+            helloService = new HelloService(); // no injection here :()
         }
         
         /// <summary>
@@ -25,13 +25,12 @@ namespace HelloWorld
         /// <param name="input"></param>
         /// <param name="context"></param>
         /// <returns></returns>
-        public string FunctionHandler(object input, ILambdaContext context)
+        public Response HandleRequest(Request input, ILambdaContext context)
         {
-            var json = (System.Text.Json.JsonElement)input;
-            var name = GetPropertyValue(json, "name");
-            var str = helloService.GenerateHello(name, "Salt Lake City");
-            
-            return Newtonsoft.Json.JsonConvert.SerializeObject(str);
+            var str = helloService.GenerateHello(input.Name, "Salt Lake City");
+            //return Newtonsoft.Json.JsonConvert.SerializeObject(str);
+            //return new Response().output = str;
+            return str;
         }
 
         private string GetPropertyValue(JsonElement eventDetails, string propertyName)

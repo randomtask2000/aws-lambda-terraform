@@ -18,7 +18,7 @@ namespace HelloWorld.Tests
         {
 
             // Invoke the lambda function and confirm the string was upper cased.
-            var function = new Function();
+            var function = new HelloLambdaHandler();
             var context = new TestLambdaContext();
             var result = function.FunctionHandler("Emilio", context);
 

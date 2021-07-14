@@ -11,7 +11,7 @@ variable "lambda_payload_filename" {
 }
 
 variable "lambda_function_handler" {
-  default = "HelloWorld::HelloWorld.Function::FunctionHandler"
+  default = "HelloWorld::HelloWorld.HelloLambdaHandler::HandleRequest"
 }
 
 variable "lambda_runtime" {
