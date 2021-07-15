@@ -16,6 +16,12 @@ directory with your AWS account/IAM User details. Your IAM User must have
 [permissions](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
 for AWS Lambda and AWS API Gateway.
 
+Run an `init` in the Terraform directory like so
+```
+$ cd terraform
+$ terraform init
+```
+
 The contents should follow the template below (with you replacing the info
 between `<< >>`):
 
